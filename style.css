@@ -24,10 +24,121 @@ body {
 }
 
 .obal {
-    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+    max-width: 960px; /*obsah stránky je omezený do pruhu širokého 960px */
     margin: 0 auto; /* pruh je na stránce vycentrovaný */
     background: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+
+.menu {
+    display: flex;
+    justify-content: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+	list-style: none;
+    display: inline-block;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 25px;
+    color: #25133d;
+}
+
+a:hover {
+    background-color: #48418e;
+    color: white;
+}
+
+.soucasna {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.telo1 {
+    background-image: url("images/pozadi.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    display: flex;
+}
+
+.text {
+    padding: 15px 30px;
+    color: white;
+    flex: 0 1 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    font-size: 30px;
+    font-weight: 300;
+    width: 74%;
+}
+
+.nadpis {
+    font-size: 75px;
+    font-weight: 500;
+    margin: 0px 0px;
+}
+
+.tlacitka{
+    padding: 0;
+}
+
+.atlacitko1 {
+    background-color: #48418e;
+    color: white;
+    border: solid white 1px;
+    border-radius: 7px;
+    box-shadow: 1px 2px 5px rgb(53, 49, 49);
+    margin-right: 20px;
+}
+
+.atlacitko2 {
+    color: white;
+    border: solid white 1px;
+    border-radius: 7px;
+    box-shadow: 1px 2px 5px rgb(53, 49, 49);
+}
+
+.obrazek {
+    flex: 0 1 45%;
+    position: relative;
+}
+
+.foto {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.telo2 {
+    display: flex;
+    text-align: center;
+}
+
+h3 {
+    color: #48418e;
+}
+
+footer {
+    background-color: #48418e;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.levy, .prostredni, .pravy {
+    padding: 25px;
+}
